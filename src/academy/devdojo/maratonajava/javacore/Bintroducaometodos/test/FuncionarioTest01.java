@@ -11,7 +11,7 @@ public class FuncionarioTest01 {
         funcionario.setValoresSalario(new double[]{1658.45D, 1200.45D, 1426.45D});
 
         funcionario.imprimir();
-        System.out.println("###################");
+        System.out.println("###############");
         funcionario.mediaSalario();
     }
 }
