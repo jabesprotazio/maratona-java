@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.introducao.Ycolecoes.test;
 
-import academy.devdojo.maratonajava.introducao.javacore.Ycolecoes.dominio.Smartphone;
+import academy.devdojo.maratonajava.introducao.Ycolecoes.dominio.Smartphone;
 
 import java.util.ArrayList;
 import java.util.List;

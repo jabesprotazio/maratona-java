@@ -1,7 +1,7 @@
-package academy.devdojo.maratonajava.introducao.javacore.Xserializacao.test;
+package academy.devdojo.maratonajava.javacore.Xserializacao.test;
 
-import academy.devdojo.maratonajava.introducao.javacore.Xserializacao.dominio.Aluno;
-import academy.devdojo.maratonajava.introducao.javacore.Xserializacao.dominio.Turma;
+import academy.devdojo.maratonajava.javacore.Xserializacao.dominio.Aluno;
+import academy.devdojo.maratonajava.javacore.Xserializacao.dominio.Turma;
 
 import java.io.*;
 import java.nio.file.Files;

@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.introducao.javacore.Xserializacao.dominio;
+package academy.devdojo.maratonajava.javacore.Xserializacao.dominio;
 
 import java.io.Serializable;
 
