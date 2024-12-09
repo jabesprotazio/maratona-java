@@ -2,6 +2,8 @@ package academy.devdojo.maratonajava.javacore.Ycolecoes.dominio;
 
 import java.util.Objects;
 
+import static java.lang.Long.valueOf;
+
 public class Manga implements Comparable<Manga> {
     private Long id;
     private String nome;
@@ -75,7 +77,7 @@ public class Manga implements Comparable<Manga> {
 //        }
 //
 //
-         return this.nome.compareTo(outroManga.getNome());
+         return this.nome.compareTo((outroManga.getNome()));
 
 //       return this.id.compareTo(outroManga.getId());
 //       return Double.valueOf(preco).compareTo(outroManga.getPreco());
