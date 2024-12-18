@@ -3,7 +3,7 @@ package beecrowd;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class SimpleCalculate {
+public class SimpleCalculate1010 {
     public static void main(String[] args) {
     int codeOfProduct1,codeOfProduct2, quantifiers1, quantifiers2;
     double price1,price2, valuePay;
