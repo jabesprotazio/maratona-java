@@ -40,6 +40,14 @@ public class Smartphone {
         this.serialNumber = serialNumber;
     }
 
+    @Override
+    public String toString() {
+        return "Smartphone{" +
+                "serialNumber='" + serialNumber + '\'' +
+                ", marca='" + marca + '\'' +
+                '}';
+    }
+
     public String getMarca() {
         return marca;
     }

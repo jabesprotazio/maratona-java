@@ -10,7 +10,7 @@ public class SalaryWithBonus1009 {
         double salaryFix, sales, total;
         Scanner keyboard = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("0.00");
-        name = keyboard.next();
+        name = (String) keyboard.next();
         salaryFix = keyboard.nextDouble();
         sales = keyboard.nextDouble();
 
