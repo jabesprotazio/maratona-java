@@ -15,7 +15,7 @@ public class Smartphone {
         if(this == obj) return true;
         if(this.getClass() != obj.getClass()) return false;
         Smartphone smartphone = (Smartphone) obj;
-        return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
+        return this.serialNumber != null && this.serialNumber.equals(smartphone.serialNumber);
     }
 
     // se x.equals(y) == true, y.hasCode(x) == x.hasCode();
@@ -24,7 +24,7 @@ public class Smartphone {
     // y.hashCode() != x.hashCode(),  x.equals(y) deverá ser false.
     @Override
     public int hashCode() {
-        return serialNumber == null ? 0 : this.serialNumber.hashCode();
+        return this.serialNumber == null ? 0 : this.serialNumber.hashCode();
     }
 
     public Smartphone(String serialNumber, String marca) {

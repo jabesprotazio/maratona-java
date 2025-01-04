@@ -6,6 +6,7 @@ import academy.devdojo.maratonajava.javacore.Ycolecoes.dominio.Manga;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.NavigableSet;
 
 public class MapTest03 {
     public static void main(String[] args) {
@@ -20,16 +21,17 @@ public class MapTest03 {
 
         List<Manga> mangaConsumidor1List = List.of(manga1,manga2,manga3);
         List<Manga> mangaConsumidor2List = List.of(manga4,manga5);
-        Map<Consumidor,List<Manga>> consumidorManga = new HashMap<>(    );
-        consumidorManga.put(consumidor1,mangaConsumidor1List);
-        consumidorManga.put(consumidor2,mangaConsumidor2List);
+        Map<Consumidor,List<Manga>> consumidorMangaMap = new HashMap<>();
+        consumidorMangaMap.put(consumidor1,mangaConsumidor1List);
+        consumidorMangaMap.put(consumidor2,mangaConsumidor2List);
 
 
-        for(Map.Entry<Consumidor, List<Manga>> entry : consumidorManga.entrySet()){
-            System.out.println("----" + entry.getKey().getNome());
-            for (Manga manga : entry.getValue()){
-                System.out.println("-------"+manga.getNome());
-            }
-        }
+     for(Map.Entry<Consumidor, List<Manga>> entry : consumidorMangaMap.entrySet()){
+         System.out.println("----" + entry.getKey().getNome());
+         for (Manga manga : entry.getValue()) {
+             System.out.println("------" +  manga.getNome());
+         }
+
+     }
     }
 }

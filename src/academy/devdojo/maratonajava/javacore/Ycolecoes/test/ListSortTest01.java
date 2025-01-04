@@ -30,11 +30,11 @@ public class ListSortTest01 {
 
 
 
-        for (String manga : mangas){
+         for (String manga : mangas){
             System.out.println(manga);
         }
 
 
-        new Manga(546847136L, null, 0);
+        new Manga(null, "Holmes", 0);
     }
 }
