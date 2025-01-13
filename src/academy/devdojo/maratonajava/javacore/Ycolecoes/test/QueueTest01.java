@@ -10,15 +10,10 @@ public class QueueTest01 {
         fila.add("A");
         fila.add("B");
 
-        while (!fila.isEmpty()){
-            System.out.println(fila.remove());
-        }
+       while (!fila.isEmpty()){
+           System.out.println(fila.remove());
+       }
 
-
-        System.out.println("--------");
-        for (String s : fila) {
-            System.out.println(s);
-        }
-
+        System.out.println(fila);
     }
 }

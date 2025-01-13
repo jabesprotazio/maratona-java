@@ -2,7 +2,6 @@ package academy.devdojo.maratonajava.javacore.Ycolecoes.dominio;
 
 import java.util.Objects;
 
-import static java.lang.Long.valueOf;
 
 public class Manga implements Comparable<Manga> {
     private Long id;
@@ -28,7 +27,7 @@ public class Manga implements Comparable<Manga> {
         this.preco = preco;
     }
 
-    public Manga(Long id, String nome, double preco, int quantidade) {
+    public  Manga(Long id, String nome, double preco, int quantidade) {
        this(id,nome,preco);
         this.quantidade = quantidade;
     }
@@ -42,12 +41,12 @@ public class Manga implements Comparable<Manga> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Manga manga = (Manga) o;
-        return Double.compare(preco, manga.preco) == 0 && Objects.equals(id, manga.id) && Objects.equals(nome, manga.nome);
+        return Objects.equals(id, manga.id) && Objects.equals(nome, manga.nome);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nome, preco);
+        return Objects.hash(id, nome);
     }
 
     public void setId(Long id) {
@@ -81,16 +80,18 @@ public class Manga implements Comparable<Manga> {
         // negativo se o this < outroManga
         // se this == outroManga, return 0
         // positivo se this > outroManga
-//        if (this.id < outroManga.getId()) {
-//            return -1;
-//        }else if(this.id.equals(outroManga.getId())) {
-//            return 0;
-//        }else {
-//            return 1;
-//        }
-//
-//
-         return this.nome.compareTo((outroManga.getNome()));
+        /*if (this.id < outroManga.getId()) {
+            return -1;
+        }else if(this.id.equals(outroManga.getId())) {
+            return 0;
+        }else {
+            return 1;
+        }*/
+
+
+          return this.nome.compareTo(outroManga.getNome());
+         //return Double.compare(this.preco, outroManga.getPreco());
+         //return this.nome.compareTo((outroManga.getNome()));
 
 //       return this.id.compareTo(outroManga.getId());
 //       return Double.valueOf(preco).compareTo(outroManga.getPreco());

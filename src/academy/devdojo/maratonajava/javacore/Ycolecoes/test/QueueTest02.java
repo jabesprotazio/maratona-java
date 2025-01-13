@@ -21,5 +21,6 @@ public class QueueTest02 {
             System.out.println(mangas.poll());
         }
 
+
     }
 }
