@@ -10,20 +10,15 @@ public class ComportamentoPorParametroTest02 {
     private static List<Car> cars = List.of(new Car("green", 2011), new Car("black", 1998), new Car("red", 2019));
 
     public static void main(String[] args) {
-        List<Car> greenCars = filter(cars, car -> car.getColor().equals("green"));
-        List<Car> yearBeforeCars = filter(cars, new CarPredicate() {
+        List<Car> greenCars = filter(cars, new CarPredicate() {
             @Override
             public boolean test(Car car) {
-                return car.getYear() < 2015;
+                return car.getColor().equals("green");
             }
-        });
-        List<Car> redCars = filter(cars, new CarPredicate(){
 
-            @Override
-            public boolean test(Car car) {
-                return car.getColor().equals("red");
-            }
         });
+        List<Car> yearBeforeCars = filter(cars, car -> car.getYear() < 2015);
+        List<Car> redCars = filter(cars, car -> car.getColor().equals("red"));
         System.out.println(greenCars);
         System.out.println(redCars);
         System.out.println(yearBeforeCars);
