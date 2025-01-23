@@ -1,7 +1,7 @@
 package beecrowd;
 
-import java.text.DecimalFormat;
-import java.util.Scanner;
+    import java.text.DecimalFormat;
+    import java.util.Scanner;
 
 public class Area1012 {
     public static void main(String[] args) {
